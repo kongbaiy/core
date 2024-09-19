@@ -1,0 +1,15 @@
+{
+    "folders": [
+        {
+            "name": "demo",
+            "path": "apps/demo"
+        }
+    ],
+    "files.exclude": {
+      "**/apps": true,
+      "packages": true,
+      "config": true,
+      "docs": true,
+      "types": true
+    },
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@config/commitlint",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "postinstall": "unbuild --stub"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.4.1",
+    "@commitlint/config-conventional": "^19.4.1",
+    "husky": "^9.1.5"
+  }
+}

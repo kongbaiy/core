@@ -1,0 +1,77 @@
+{
+  "editor.formatOnSave": true,
+  //   "editor.tabSize": 4,
+  //   "prettier.useTabs": true,
+  "npm.packageManager": "pnpm",
+
+  // Auto fix
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
+  },
+
+  // eslint 配置
+  "eslint.format.enable": true,
+  "eslint.probe": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "vue",
+    "markdown",
+    "json",
+    "jsonc"
+  ],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "vue",
+    "markdown",
+    "json",
+    "jsonc"
+  ],
+
+  // stylelint 配置
+  "stylelint.enable": true,
+  "stylelint.validate": [
+    "css",
+    "less",
+    "postcss",
+    "scss",
+    "vue",
+    "sass",
+    "html"
+  ],
+  "files.eol": "\n",
+
+  // i18n 配置
+  "i18n-ally.localesPaths": ["packages/locales/src", "apps/demo/src/locales/lang", "apps/demo2/locales/lang"],
+  "i18n-ally.enabledParsers": ["ts", "js", "json"],
+  "i18n-ally.keystyle": "nested",
+  "i18n-ally.sortKeys": true,
+  "i18n-ally.namespace": false,
+  "i18n-ally.sourceLanguage": "zh-hans",
+  "i18n-ally.displayLanguage": "zh-hans",
+  "i18n-ally.enabledFrameworks": ["vue", "react"],
+  "i18n-ally.encoding": "utf-8", // 翻译文件的编码
+  "cSpell.words": [
+    "antfu",
+    "camelcase",
+    "commitlint",
+    "dcloudio",
+    "nocheck",
+    "pinia",
+    "prefixs",
+    "preinstall",
+    "stylelint",
+    "unocss"
+  ],
+
+  "[scss]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  }
+}

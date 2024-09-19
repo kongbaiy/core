@@ -1,0 +1,21 @@
+{
+  "name": "@config/eslint",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "postinstall": "unbuild --stub"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.0.0",
+    "eslint": "^9.9.1",
+    "eslint-plugin-vue": "^9.28.0"
+  }
+}

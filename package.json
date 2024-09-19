@@ -1,0 +1,57 @@
+{
+  "type": "module",
+  "private": true,
+  "packageManager": "pnpm@9.0.5",
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "dev:demo": "pnpm -C apps/demo dev",
+    "preinstall": "npx only-allow pnpm",
+    "postinstall": "husky",
+    "prepare": "husky",
+    "lint:eslint": "eslint . --fix",
+    "lint:stylelint": "stylelint \"**/*.{css,scss}\" --fix",
+    "create:i18n-path": "npx ts-node i18n-locales-paths.js"
+  },
+  "dependencies": {
+    "@packages/enums": "workspace:*",
+    "@packages/locales": "workspace:*",
+    "axios": "^1.7.7",
+    "element-plus": "^2.8.2",
+    "pinia": "^2.2.2",
+    "vue": "^3.4.37",
+    "vue-i18n": "^10.0.0",
+    "vue-router": "^4.4.4"
+  },
+  "devDependencies": {
+    "@config/commitlint": "workspace:*",
+    "@config/eslint": "workspace:*",
+    "@config/stylelint": "workspace:*",
+    "@config/typescript": "workspace:*",
+    "@config/unocss": "workspace:*",
+    "@config/vite": "workspace:*",
+    "@dcloudio/types": "^3.4.12",
+    "@types/node": "^22.5.4",
+    "@vitejs/plugin-vue": "^5.1.2",
+    "husky": "^9.1.5",
+    "lint-staged": "^15.2.10",
+    "sass": "^1.77.8",
+    "sass-loader": "^16.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4",
+    "unbuild": "^2.0.0",
+    "unplugin-element-plus": "^0.8.0",
+    "vue-tsc": "^2.0.29"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.{vue,js,ts,jsx,tsx,json,md}": "eslint --fix",
+    "*.{css,scss}": "stylelint --fix"
+  }
+}

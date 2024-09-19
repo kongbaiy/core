@@ -1,0 +1,13 @@
+{
+  "name": "@config/unocss",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "./index.ts",
+  "dependencies": {
+    "@unocss/preset-uno": "^0.62.3",
+    "@unocss/transformer-directives": "^0.62.3",
+    "unocss": "^0.62.3"
+  }
+}
