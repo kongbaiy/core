@@ -1,6 +1,4 @@
 export default {
-    title: '运营管理平台',
-
     // 通知 & 消息
     notice: {
         title: ['提示', '温馨提示', '消息通知'],
@@ -22,5 +20,27 @@ export default {
         disabled: '停用成功',
         copied: '复制成功',
         reLogin: '重新登录',
+    },
+
+    deleteAction: {
+        noData: '请选择删除数据！',
+        confirm: '{key}请确认是否删除该数据？',
+    },
+
+    system: {
+        PasswordOne: '新密码',
+        PasswordTwo: '确认密码',
+        changePassword: '修改密码',
+        setPassword: '设置密码',
+        account: '账号不能为空',
+        firstLogin: '首次登录必须先设置密码!',
+        passassword: '密码不能为空',
+        newPassword: '新密码不能为空',
+        repeatPassword: '确认密码不能为空',
+        changePasswordSuccess: '修改密码成功',
+        inconsistentPasswords: '两次密码输入不一致',
+        minPasswordLength: '密码不能小于8位',
+        maxPasswordLength: '密码不能大与20位',
+        cannotIncludeChinese: '密码不能包含中文字符',
     },
 }

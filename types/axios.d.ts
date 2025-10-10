@@ -28,9 +28,10 @@ declare module 'axios' {
     }
 
     // 扩展 AxiosResponse，添加 page 字段
-    interface AxiosResponse {
-        page: Page
-    }
+    // interface AxiosResponse {
+    //     page: Page
+    // }
+    interface AxiosResponse extends AxiosResult { }
 
     type Response<T = any> = AxiosResponse<AxiosResult<T>>
 

@@ -1,6 +1,6 @@
 import { getBrowserLang, i18n } from '@packages/locales'
 import axios from 'axios'
-import { ElMessage } from 'element-plus'
+import { ElMessage, ElMessageBox } from 'element-plus'
 import type { AxiosError, RequestConfig } from 'axios'
 import { getAccessToken, removeAccessToken } from './storage'
 
@@ -44,9 +44,13 @@ api.interceptors.response.use(
                     showClose: false,
                     type: 'warning',
                 }).then(() => {
+                    const accessToken = getAccessToken()
+                    console.log('accessToken: ', accessToken)
+
                     alertInit = false
+                    // location.href = `${import.meta.env.VITE_SSO_URL}/login`
+                    location.href = accessToken.logoutUrl
                     removeAccessToken()
-                    location.href = `${import.meta.env.VITE_SSO_URL}/login`
                 })
             }
             return Promise.reject(res)
@@ -71,4 +75,4 @@ api.interceptors.response.use(
     },
 )
 
-export default api
+export { api }

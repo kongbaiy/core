@@ -1,0 +1,13 @@
+.el-tooltip__trigger:focus-visible {
+    outline: unset;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.el-form--inline .el-input {
+    --el-input-width: 300px;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.el-form--inline .el-select {
+    --el-select-width: 300px;
+}

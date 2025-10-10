@@ -14,7 +14,7 @@
 - chore: 杂项，其他不需要修改源代码或不需要修改测试代码的修改
 - revert: 撤销某次提交
 
-## i18n-locales-paths
+## i18n-locales-path
 
 可以根据入口目录 + 指定文件名自动生成 `vscode` `i18n-ally.localesPaths`
 

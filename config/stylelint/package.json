@@ -11,7 +11,8 @@
   },
   "types": "./dist/index.d.ts",
   "scripts": {
-    "postinstall": "unbuild --stub"
+    "postinstall": "unbuild --stub",
+    "style": "stylelint \"src/**/*.(vue|scss|css)\" --fix"
   },
   "devDependencies": {
     "@stylistic/stylelint-config": "^2.0.0",

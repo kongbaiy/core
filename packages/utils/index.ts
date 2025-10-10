@@ -1,3 +1,5 @@
 export * from './src/axios'
-export * from './src/ks-websocket'
+export * from './src/common'
+export * from './src/reg-exp'
 export * from './src/storage'
+export * from './src/ws'

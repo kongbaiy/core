@@ -1,7 +1,7 @@
 import { createI18n } from 'vue-i18n'
 import type { App } from 'vue'
 
-const langMap: AnyObject = {
+const langMap: Record<string, string> = {
     // eslint-disable-next-line style/quote-props
     zh: 'zh-hans',
     'zh-CN': 'zh-hans',
@@ -20,7 +20,7 @@ export async function getLocale() {
     return locales.default
 }
 
-export async function i18n(messages?: AnyObject): Promise<ReturnType<typeof createI18n>> {
+export async function i18n(messages?: Record<string, any>): Promise<ReturnType<typeof createI18n>> {
     const locale = getBrowserLang()
     const message = await getLocale()
 
@@ -37,7 +37,7 @@ export async function i18n(messages?: AnyObject): Promise<ReturnType<typeof crea
     })
 }
 
-export async function setupI18n(app: App, messages?: AnyObject): Promise<void> {
+export async function setupI18n(app: App, messages?: Record<string, any>): Promise<void> {
     const _i18n = await i18n(messages)
 
     app.use(_i18n)

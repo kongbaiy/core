@@ -6,10 +6,10 @@
         }
     ],
     "files.exclude": {
-      "**/apps": true,
-      "packages": true,
-      "config": true,
-      "docs": true,
-      "types": true
+        "**/apps": true,
+        "packages": true,
+        "config": true,
+        "docs": true,
+        "types": true,
     },
 }

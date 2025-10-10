@@ -4,4 +4,8 @@
 # git config --global credential.helper store
 #
 
-git clone http://192.168.2.212:8001/web/sso.git apps/sso
+git clone -b feature-mode https://lightsoft.life:8001/web/sso.git apps/sso
+git clone -b feature-mode https://lightsoft.life:8001/web/remote-assistance.git apps/remote-assistance
+git clone -b feature-mode https://lightsoft.life:8001/web/operations-manage.git apps/operations-manage
+git clone -b feature-mode https://lightsoft.life:8001/web/organization-manage.git apps/organization-manage
+git clone -b feature-mode https://lightsoft.life:8001/web/regulatory-platform-wj.git apps/regulatory-platform-wj

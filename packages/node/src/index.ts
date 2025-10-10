@@ -26,7 +26,7 @@ export async function fileDisplay(options: IFileDisplayOptions, resultCallback: 
     resultCallback?.(filePaths)
 }
 
-export const ObjectAttrRegExp = key => new RegExp(`['"]${key}['"].*\\[([\\s\\S]*?)\\]`)
+export const ObjectAttrRegExp = (key: string) => new RegExp(`['"]${key}['"].*\\[([\\s\\S]*?)\\]`)
 
 export function replaceJSON(url: string, key: string, value: string) {
     fs.readFile(url, 'utf-8', (error, data) => {

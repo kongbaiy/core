@@ -6,7 +6,9 @@
     "@config/typescript/base.json"
   ],
   "compilerOptions": {
-    "types": ["vite/client"]
+    "types": [
+      "vite/client"
+    ]
   },
   "include": [
     "src/**/*.ts",

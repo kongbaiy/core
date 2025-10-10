@@ -1,0 +1,131 @@
+/*
+|
+| 全局公共样式重置、浏览器样式重置、默认样式重置
+| 没有使用三方的样式重置，结合项目实际情况进行重置
+|
+*/
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family:
+        "Noto Sans SC",
+        "PingFang SC",
+        "Helvetica Neue",
+        Helvetica,
+        "Hiragino Sans GB",
+        "Microsoft YaHei",
+        "Microsoft YaHei UI",
+        SimSun,
+        Arial,
+        sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333;
+    tab-size: 4;
+    background: #fff;
+    text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+ol,
+ul,
+menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+:disabled {
+    cursor: default;
+}
+
+[hidden] {
+    display: none;
+}
+
+// 隐藏图片没有src时候的边框。为了美观
+img[src=""],
+img:not([src]) {
+    opacity: 0;
+}
+
+// 去除input type=number 的箭头
+input {
+    &[type="number"] {
+        appearance: textfield;
+    }
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        appearance: none;
+    }
+}
+
+// 滚动条样式
+::-webkit-scrollbar {
+    z-index: 999;
+    width: 6px;
+    height: 6px;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #b9c4d3;
+    border-radius: 10px;
+}
+
+.test {
+    color: red;
+}
