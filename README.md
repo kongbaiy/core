@@ -21,3 +21,7 @@
 ## init-clone
 
 运行该脚本 clone 子项目
+
+## 子项目目录
+<img width="1056" height="1242" alt="image" src="https://github.com/user-attachments/assets/b5eb6d84-b83d-48d2-ac6a-79eaa022661a" />
+
